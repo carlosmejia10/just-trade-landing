@@ -1,0 +1,150 @@
+.information {
+    &__container {
+        margin: 103px 84px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &__left {
+        margin-right: 102px;
+        max-width: 530px;
+    }
+
+    &__title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 140%;
+        margin-bottom: 30px;
+
+        &-focus {
+            color: #F23802;
+        }
+    }
+
+    &__text {
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 196%;
+        color: #939393;
+        margin-bottom: 30px;
+    }
+
+    &__button {
+        background-color: #F23802;
+        color: #fff;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 17px;
+        padding: 16px 30px;
+        border-radius: 5px;
+        transition: all 0.5s ease;
+
+        &:hover {
+            background-color: #fff;
+            color: #F23802;
+            border: 1px solid #F23802;
+            padding: 15px 29px;
+        }
+    }
+
+    &__contact {
+        background-color: #F5E2D3;
+        padding: 88px 131px 88px 148px;
+        margin-bottom: 122px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-left {
+            margin-right: 327px;
+            max-width: 603px;
+        }
+
+        &-title {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 140%;
+            margin-bottom: 5px;
+        }
+
+        &-text {
+            font-size: 17px;
+            line-height: 196%;
+            color: #474747;
+            max-width: 526px;
+        }
+
+        &-button {
+            background-color: #F23802;
+            color: #fff;
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 24px;
+            padding: 14.5px 29px;
+            border-radius: 5px;
+            transition: all 0.5s ease;
+
+            &:hover {
+                background-color: #fff;
+                color: #F23802;
+                border: 1px solid #F23802;
+                padding: 13.5px 28px;
+            }
+        }
+    }
+
+    /* Estilos responsivos para tamaños de pantalla más pequeños */
+    @media screen and (max-width: 768px) {
+        &__container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__left {
+            margin-right: 0;
+            margin-bottom: 30px;
+            max-width: 100%;
+        }
+
+        &__contact {
+            flex-direction: column; /* Cambiado para que el botón aparezca debajo del texto */
+            align-items: center;
+
+            &-left {
+                margin-right: 0;
+                max-width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1224px) {
+        &__container {
+            flex-direction: column;
+           
+        }
+
+        &__right{
+            max-width: 400px;
+            margin-top: 40px;
+            position: relative;
+        }
+        &__left {
+            margin-right: 0;
+            margin-bottom: 20px;
+            max-width: 90%;
+        }
+
+        &__contact {
+            flex-direction: column; /* Cambiado para que el botón aparezca debajo del texto */
+            align-items: center;
+
+            &-left {
+                margin-right: 0;
+                max-width: 100%;
+                margin-bottom: 30px;
+                margin-top: 40px;
+            }
+        }
+    }
+}

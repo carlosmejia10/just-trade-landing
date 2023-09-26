@@ -1,0 +1,124 @@
+.header {
+    background-color: #FF8310;
+    padding-top: 35px;
+    position: relative;
+    &__container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    &__left {
+        margin-right: 55.42px;
+        margin-top: 40px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        &-titles {
+            max-width: 910px;
+            margin-bottom: 50px;
+        }
+        &-title {
+            font-family: "Red Hat Text", sans-serif;
+            font-weight: 800;
+            font-size: 130px;
+            line-height: 76.3%;
+            color: #41403C;
+            &:nth-child(1) {
+                color: #fff;
+            }
+        } 
+
+        &-text {
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+            font-size: 25px;
+            line-height: 35px;
+            color: #000;
+            max-width: 580px;
+        }
+        &-list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 57px;
+            margin-bottom: 12.25px;
+        }
+        &-item {
+            margin-right: 65px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        &-link-img {
+            transition: all 0.5s ease;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .header__content{
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-bottom: 40px;
+    }
+    
+    .header__content-title {
+        font-size: 100px;
+        margin: 22px;
+        
+    }
+
+    .header__left{
+        display: none;
+    }
+
+    .header__right{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 928px) {
+    .header__content {
+       display: flex;
+       flex-direction: columns;
+       position: relative;
+       align-items: center;
+       justify-content: center;
+       margin-bottom: 40px;
+    }
+
+    .header__left{
+        display: none;
+        }
+
+    .header__right{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 928px) and (max-width: 1224px) {
+    .header__content {
+       display: flex;
+       align-items: center;
+    }
+
+    .header__content-title {
+        font-size: 100px;
+        margin: 22px;
+        margin-left: 0px;
+    }
+
+}
+
+

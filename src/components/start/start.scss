@@ -1,0 +1,92 @@
+.start {
+    margin-bottom: 162px;
+    padding: 0 168px;
+  
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      /* Estilos para dispositivos móviles */
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 20px;
+      }
+    }
+  
+    &__left {
+      margin-right: 111px;
+  
+      /* Estilos para dispositivos móviles */
+      @media screen and (max-width: 768px) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  
+    &__title {
+      font-size: 48px;
+      line-height: 140%;
+      margin-bottom: 7px;
+  
+      /* Estilos para dispositivos móviles */
+      @media screen and (max-width: 768px) {
+        font-size: 36px;
+      }
+    }
+  
+    &__text {
+      font-size: 18px;
+      line-height: 196%;
+      color: #939393;
+      max-width: 527px;
+  
+      /* Estilos para dispositivos móviles */
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
+  
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 20px;
+  
+      &-number {
+        font-family: "Josefin Sans", sans-serif;
+        color: #fff;
+        font-size: 33px;
+        background-color: #F23802;
+        width: 43px;
+        height: 43px;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 9px;
+        display: flex;
+        align-items: center; /* Centra verticalmente */
+        justify-content: center; /* Centra horizontalmente */
+  
+        /* Estilos para dispositivos móviles */
+        @media screen and (max-width: 1240px) {
+          font-size: 24px;
+          width: 36px;
+          aspect-ratio: 1/1; /* Mantener relación de aspecto 1:1 */
+          padding-top: 6px;
+        }
+      }
+  
+      &-text {
+        margin-left: 11px;
+        font-size: 20px;
+        max-width: 373px;
+  
+        /* Estilos para dispositivos móviles */
+        @media screen and (max-width: 768px) {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  

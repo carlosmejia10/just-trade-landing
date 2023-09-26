@@ -1,0 +1,72 @@
+.team {
+    &__container {
+      padding: 0 150px;
+    }
+  
+    /* Estilos para dispositivos móviles */
+    @media screen and (max-width: 768px) {
+      &__container {
+        padding: 0 20px; /* Ajusta el espaciado lateral para dispositivos móviles */
+      }
+      &__textcont {
+        flex-direction: column; /* Cambia la dirección de la columna para dispositivos móviles */
+        align-items: flex-start; /* Alinea el texto a la izquierda para dispositivos móviles */
+        margin-bottom: 20px; /* Ajusta el margen inferior para dispositivos móviles */
+      }
+      &__title {
+        font-size: 36px; /* Reduce el tamaño de fuente para dispositivos móviles */
+        max-width: 100%; /* Haz que el texto ocupe el ancho completo */
+      }
+      &__text {
+        margin-left: 0; /* Elimina el margen izquierdo para dispositivos móviles */
+        font-size: 16px; /* Reduce el tamaño de fuente para dispositivos móviles */
+        max-width: 100%; /* Haz que el texto ocupe el ancho completo */
+      }
+      &__slider {
+        
+        &-slide {
+          margin-right: 0; /* Elimina el margen derecho para dispositivos móviles */
+          margin-bottom: 20px; /* Ajusta el margen inferior para dispositivos móviles */
+          &-info {
+            margin-top: 10px; /* Ajusta el margen superior para dispositivos móviles */
+          }
+          &-textcont {
+            margin-right: 0; /* Elimina el margen derecho para dispositivos móviles */
+          }
+          &-name {
+            font-size: 18px; /* Reduce el tamaño de fuente para dispositivos móviles */
+            margin-bottom: 3px; /* Ajusta el margen inferior para dispositivos móviles */
+          }
+          &-role {
+            font-size: 14px; /* Reduce el tamaño de fuente para dispositivos móviles */
+          }
+          &-contact {
+            flex-direction: column; /* Cambia la dirección de la columna para dispositivos móviles */
+            align-items: flex-start; /* Alinea los elementos a la izquierda para dispositivos móviles */
+            &-img {
+              margin-right: 0; /* Elimina el margen derecho para dispositivos móviles */
+              margin-bottom: 10px; /* Ajusta el margen inferior para dispositivos móviles */
+            }
+          }
+        }
+      }
+    }
+  
+    .slick-dots li button:before {
+      background-color: #d9d9d9;
+      height: 27px !important;
+      width: 27px !important;
+      text-indent: -9999px;
+      overflow: hidden;
+      border-radius: 50%;
+      margin-top: 53px;
+    }
+  
+    .slick-dots li {
+      &.slick-active button:before {
+        background-color: #F23802;
+      }
+      margin-right: 22px !important;
+    }
+  }
+  

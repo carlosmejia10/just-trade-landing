@@ -1,0 +1,60 @@
+.gains {
+    background-color: #F5F4F0;
+    padding: 33px 72px 66px;
+    margin-bottom: 150px;
+    &__textbox {
+        margin-bottom: 55px;
+        text-align: center;
+    }
+    &__title {
+        font-size: 55px;
+        line-height: 120%;
+        font-family: "Outfit", sans-serif;
+        font-weight: 600;
+        margin-bottom: 16px;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 140%;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 400;
+        margin-bottom: 55px;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        width: 416px;
+        background-color: #fff;
+        margin-right: 24px;
+        padding: 19px 44px 73px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        &:last-child {
+            margin-right: 0;
+            padding: 19px 44px 19px;
+        }
+        &-image {
+            margin-bottom: 23px;
+        }
+        &-title {
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 27px;
+            margin-bottom: 14px;
+        }
+        &-text {
+            font-family: "DM Sans", sans-serif;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 27px;
+            text-align: center;
+            color: #696969;
+        }
+    }
+}

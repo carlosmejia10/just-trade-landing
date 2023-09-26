@@ -1,0 +1,91 @@
+.clients {
+    margin-bottom: 160px;
+    margin-top: 167px;
+    padding: 0 182px 0 144px;
+    &__textcont {
+        margin-bottom: 57px;
+    }
+    &__subtitle {
+        font-size: 16px;
+        margin-bottom: 9px;
+        &::before {
+            content:'';
+            display: inline-block;
+            margin-bottom: 4px;
+            margin-right: 14px;
+            top: 0;
+            left: 0;
+            width: 26px;
+            height: 2px;
+            background-color: #000;
+        }
+    }
+    &__title {
+        font-size: 48px;
+        line-height: 140%;
+        margin-bottom: 57px;
+        &-focus {
+            color: #F23802;
+        }
+    }
+    &__slider {
+        &-slide {
+            &-container {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+            }
+            &-img {
+                margin-right: 47px;
+            }
+            &-text {
+                line-height: 38px;
+                font-size: 28px;
+                font-family: "Josefin Sans", sans-serif;
+                font-weight: 500;
+                font-style: italic;
+                margin-bottom: 41px;
+            }
+            &-client {
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 2px;
+            }
+            &-about {
+                font-size: 14px;
+                color: #525969;
+                margin-bottom: 18px;
+            }
+            &-gallery {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+            }
+            &-item {
+                margin-right: 16px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .clients {
+      padding: 0 30px; /* Ajusta el relleno horizontal según tus necesidades */
+      &__title {
+        font-size: 32px; /* Tamaño de fuente reducido para dispositivos móviles */
+        margin-bottom: 30px; /* Ajusta el margen inferior según tus necesidades */
+      }
+      &__slider-slide-container {
+        flex-direction: column; /* Cambia la dirección de flexión para apilar elementos */
+        align-items: center; /* Centra los elementos verticalmente */
+        &-img {
+          margin-right: 0; /* Elimina el margen derecho de la imagen */
+          margin-bottom: 20px; /* Agrega un margen inferior entre la imagen y el texto */
+        }
+      }
+      /* Otros ajustes de estilo para dispositivos móviles aquí */
+    }
+  }
