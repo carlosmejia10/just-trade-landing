@@ -1,6 +1,6 @@
 .start {
     margin-bottom: 162px;
-    padding: 0 168px;
+    padding: 0 80px;
   
     &__container {
       display: flex;
@@ -11,7 +11,7 @@
       @media screen and (max-width: 768px) {
         flex-direction: column;
         align-items: flex-start;
-        padding: 0 20px;
+        padding-left: 0pxS;
       }
     }
   
@@ -22,6 +22,7 @@
       @media screen and (max-width: 768px) {
         margin-right: 0;
         margin-bottom: 20px;
+        margin-left: 0;
       }
     }
   
