@@ -121,44 +121,76 @@
         font-size: 16px;
         color: #fff;
     }
+}
 
-    /* Media query para dispositivos móviles */
-    @media screen and (max-width: 768px) {
-        &__middle {
-            display: none; /* Oculta el contenido en dispositivos móviles */
-        }
-
-        &__right {
-            display: none; /* Oculta el contenido en dispositivos móviles */
-        }
-
+@media screen and (max-width: 1400px) {
+    .footer {
         &__container {
-            padding: 20px;
+            padding: 20px 10px; /* Ajustar el relleno para pantallas de celular */
         }
-
         &__top {
-            justify-content: center;
+            position: static; /* Eliminar la posición absoluta para pantallas de celular */
+            transform: none; /* Eliminar la transformación horizontal para pantallas de celular */
+            margin: 10px 0; /* Ajustar el margen superior e inferior para pantallas de celular */
         }
-
         &__label {
-            font-size: 24px;
+            font-size: 20px; /* Reducir el tamaño de fuente para pantallas de celular */
+            margin-left: 10px; /* Ajustar el margen izquierdo para pantallas de celular */
         }
-
+        &__content {
+            flex-direction: column; /* Cambiar la dirección de flexbox a vertical para pantallas de celular */
+            align-items: center; /* Centrar los elementos en el eje X para pantallas de celular */
+            justify-content: center; /* Centrar los elementos en el eje Y para pantallas de celular */
+            margin-top: 30px; /* Ajustar el margen superior para pantallas de celular */
+        }
+        &__left {
+            margin-right: 0; /* Eliminar el margen derecho para pantallas de celular */
+        }
+        &__suggestions {
+            margin-bottom: 10px; /* Reducir el margen inferior para pantallas de celular */
+            font-size: 18px; /* Reducir el tamaño de fuente para pantallas de celular */
+        }
         &__input {
-            padding: 15px 10px;
+            width: 100%; /* Asegurarse de que el campo de entrada ocupe todo el ancho para pantallas de celular */
+            margin-bottom: 20px; /* Añadir más espacio debajo del campo de entrada para pantallas de celular */
         }
-
+        &__middle {
+            margin-right: 0; /* Eliminar el margen derecho para pantallas de celular */
+            margin-bottom: 20px; /* Añadir más espacio entre middle y right para pantallas de celular */
+            &-item {
+                margin-bottom: 5px; /* Reducir el margen inferior para pantallas de celular */
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
         &__title {
-            font-size: 24px;
+            font-size: 20px; /* Reducir el tamaño de fuente para pantallas de celular */
+            margin-bottom: 10px; /* Reducir el margen inferior para pantallas de celular */
         }
-
+        &__right {
+            &-item {
+                margin-bottom: 5px; /* Reducir el margen inferior para pantallas de celular */
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            &-img {
+                margin-right: 8px; /* Reducir el margen derecho para pantallas de celular */
+                width: 80%; /* Reducir el tamaño de las imágenes en un 20% */
+            }
+        }
         &__social {
-            margin-top: 20px;
-            margin-bottom: 20px;
+            font-size: 16px; /* Reducir el tamaño de fuente para la sección de redes sociales */
+            margin-top: 10px; /* Ajustar el margen superior para pantallas de celular */
+            margin-bottom: 10px; /* Ajustar el margen inferior para pantallas de celular */
+            text-align: center; /* Centrar el texto para pantallas de celular */
+            &-list {
+                justify-content: center; /* Centrar los elementos en el eje X para pantallas de celular */
+            }
         }
-
         &__copyrights {
-            font-size: 14px;
+            font-size: 12px; /* Reducir el tamaño de fuente para pantallas de celular */
         }
     }
 }

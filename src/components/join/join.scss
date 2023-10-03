@@ -60,3 +60,45 @@
         }
     }
 }
+
+@media screen and (max-width: 1100px) {
+    .join {
+        margin: 0 20px; /* Ajustar los márgenes izquierdo y derecho para pantallas de celular */
+        padding: 40px 20px; /* Ajustar el relleno para pantallas de celular */
+        border-radius: 0; /* Eliminar el redondeo de bordes para pantallas de celular */
+    }
+
+    .join__container {
+        flex-direction: column; /* Cambiar la dirección de flexbox a vertical para pantallas de celular */
+        align-items: center; /* Centrar los elementos en el eje X para pantallas de celular */
+        justify-content: center; /* Centrar los elementos en el eje Y para pantallas de celular */
+    }
+
+    .join__left {
+        margin-right: 0; /* Eliminar el margen derecho para pantallas de celular */
+        margin-bottom: 20px; /* Agregar un margen inferior para separar los elementos para pantallas de celular */
+    }
+
+    .join__title {
+        font-size: 24px; /* Cambiar el tamaño de fuente del título para pantallas de celular */
+        max-width: 100%; /* Asegurarse de que el título se ajuste al ancho de su contenedor para pantallas de celular */
+    }
+
+    .join__text {
+        font-size: 16px; /* Cambiar el tamaño de fuente del texto para pantallas de celular */
+        max-width: 100%; /* Asegurarse de que el texto se ajuste al ancho de su contenedor para pantallas de celular */
+    }
+
+    .join__input {
+        padding: 10px; /* Ajustar el relleno del campo de entrada para pantallas de celular */
+        width: 100%; /* Asegurarse de que el campo de entrada ocupe todo el ancho de su contenedor para pantallas de celular */
+    }
+
+    .join__right {
+        margin-bottom: 20px; /* Agregar un margen inferior para separar los elementos para pantallas de celular */
+    }
+
+    .join__img {
+        margin-bottom: 20px; /* Reducir el margen inferior para pantallas de celular */
+    }
+}

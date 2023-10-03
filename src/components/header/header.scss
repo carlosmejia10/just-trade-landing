@@ -6,7 +6,6 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
-        margin-bottom: 40px;
     }
     &__left {
         margin-right: 55.42px;
@@ -18,20 +17,19 @@
         align-items: flex-start;
         justify-content: center;
         &-titles {
-            max-width: 910px;
-            margin-bottom: 50px;
+            max-width: 810px;
+            margin-bottom: 40px;
         }
         &-title {
             font-family: "Red Hat Text", sans-serif;
             font-weight: 800;
-            font-size: 130px;
+            font-size: 150px;
             line-height: 76.3%;
             color: #41403C;
             &:nth-child(1) {
                 color: #fff;
             }
-        } 
-
+        }
         &-text {
             font-family: "Roboto", sans-serif;
             font-weight: 300;
@@ -62,63 +60,59 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    
-    .header__content{
-        display: flex;
-        align-items: center;
-        position: relative;
-        margin-bottom: 40px;
-    }
-    
-    .header__content-title {
-        font-size: 100px;
-        margin: 22px;
-        
-    }
-
-    .header__left{
-        display: none;
-    }
-
-    .header__right{
-        display: none;
-    }
-}
-
-
-
-@media screen and (max-width: 928px) {
-    .header__content {
-       display: flex;
-       flex-direction: columns;
-       position: relative;
-       align-items: center;
-       justify-content: center;
-       margin-bottom: 40px;
-    }
-
-    .header__left{
-        display: none;
+@media screen and (max-width: 1200px) {
+    .header {
+        padding-top: 20px; /* Ajustar el relleno superior para pantallas de celular */
+        &__container {
+            flex-direction: column; /* Cambiar la dirección de flexbox a vertical para pantallas de celular */
+            align-items: center; /* Centrar los elementos en el eje X para pantallas de celular */
+            padding: 40px; /* Aumentar el padding del contenedor para pantallas de celular */
         }
 
-    .header__right{
-        display: none;
+        &__right{
+            display: none; 
+        }
+
+        &__left {
+            display: none;/* Ajustar el margen superior para pantallas de celular */
+        }
+        
+        &__content {
+            align-items: center; /* Centrar los elementos en el eje X para pantallas de celular */
+            text-align: center; /* Centrar el texto para pantallas de celular */
+            &-titles {
+                max-width: 580px; /* Reducir el ancho máximo para pantallas de celular */
+                margin-bottom: 20px; /* Ajustar el margen inferior para pantallas de celular */
+            }
+            &-title {
+                font-size: 60px; /* Reducir el tamaño de fuente para pantallas de celular */
+                line-height: 80%; /* Ajustar el interlineado para pantallas de celular */
+                &:nth-child(1) {
+                    color: #fff; /* Mantener el color del primer título */
+                }
+            }
+            &-text {
+                font-size: 18px; /* Reducir el tamaño de fuente para pantallas de celular */
+                line-height: 26px; /* Ajustar el interlineado para pantallas de celular */
+                max-width: 100%; /* Asegurarse de que el texto ocupe todo el ancho para pantallas de celular */
+            }
+            &-list {
+                display: flex; /* Mostrar los elementos en línea */
+                align-items: center; /* Centrar los elementos en el eje Y para pantallas de celular */
+                justify-content: center; /* Centrar los elementos en el eje X para pantallas de celular */
+                margin-top: 20px; /* Ajustar el margen superior para pantallas de celular */
+                margin-bottom: 10px; /* Ajustar el margen inferior para pantallas de celular */
+            }
+            &-item {
+                margin-right: 50px; /* Eliminar el margen derecho para pantallas de celular */
+                margin-bottom: 10px; /* Ajustar el margen inferior para pantallas de celular */
+            }
+            &-link-img {
+                transition: all 0.5s ease;
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
     }
 }
-
-@media screen and (min-width: 928px) and (max-width: 1224px) {
-    .header__content {
-       display: flex;
-       align-items: center;
-    }
-
-    .header__content-title {
-        font-size: 100px;
-        margin: 22px;
-        margin-left: 0px;
-    }
-
-}
-
-

@@ -58,3 +58,47 @@
         }
     }
 }
+
+@media screen and (max-width: 1000px) {
+    /* Estilos específicos para pantallas de celular */
+    .gains {
+        padding: 20px; /* Cambiar el relleno para pantallas de celular */
+        margin-bottom: 80px; /* Cambiar el margen inferior para pantallas de celular */
+    }
+
+    .gains__textbox,
+    .gains__title,
+    .gains__text,
+    .gains__list,
+    .gains__item,
+    .gains__item-image,
+    .gains__item-title,
+    .gains__item-text {
+        display: block; /* Mostrar todos los elementos como bloques */
+    }
+
+    .gains__title {
+        font-size: 32px; /* Cambiar el tamaño de fuente del título para pantallas de celular */
+    }
+
+    .gains__text {
+        font-size: 16px; /* Cambiar el tamaño de fuente del texto para pantallas de celular */
+    }
+
+    .gains__list {
+        flex-direction: column; /* Cambiar la dirección de flexbox para pantallas de celular */
+    }
+
+    .gains__item {
+        width: 100%; /* Hacer que los elementos ocupen todo el ancho para pantallas de celular */
+        margin-right: 0; /* Eliminar el margen derecho para pantallas de celular */
+        margin-bottom: 24px; /* Agregar un margen inferior para separar los elementos para pantallas de celular */
+    }
+
+    .gains__item-title {
+        display: flex; /* Hacer que el título sea un contenedor flexible */
+        justify-content: center; /* Centrar horizontalmente */
+        align-items: center; /* Centrar verticalmente */
+    }
+}
+
