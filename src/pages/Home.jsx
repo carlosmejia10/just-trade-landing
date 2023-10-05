@@ -1,5 +1,6 @@
 import React from "react";
 import "./home.scss";
+import TopBar from "../components/topBar/TopBar";
 import Header from "../components/header/Header"
 import Benefits from "../components/benefits/Benefits"
 import Strengths from "../components/strengths/Strengths"
@@ -14,6 +15,7 @@ import Blog from "../components/blog/Blog";
 const Home = () => {
     return (
         <div className="home">
+            <TopBar/>
             <Header/>
             <Benefits/>
             <Strengths/>

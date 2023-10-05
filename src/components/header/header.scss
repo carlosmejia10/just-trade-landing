@@ -1,4 +1,5 @@
 .header {
+    margin-top: 0;
     background-color: #FF8310;
     padding-top: 35px;
     position: relative;
@@ -62,6 +63,7 @@
 
 @media screen and (max-width: 1200px) {
     .header {
+        margin-top: 0;
         padding-top: 20px; /* Ajustar el relleno superior para pantallas de celular */
         &__container {
             flex-direction: column; /* Cambiar la dirección de flexbox a vertical para pantallas de celular */

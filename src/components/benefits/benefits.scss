@@ -1,4 +1,8 @@
 .benefits {
+    background-color: #fff;
+    position: relative;
+    margin-right: 0;
+    z-index: 2;
     margin-bottom: 110px;
     &__container {
         display: flex;
@@ -61,8 +65,9 @@
 
 @media screen and (max-width: 768px) {
     .benefits {
-        margin-left: 20px; /* Agregar margen a la izquierda para pantallas de celular */
-        margin-right: 20px; /* Agregar margen a la derecha para pantallas de celular */
+        position: relative;
+        z-index: 2;
+        padding: 20px; 
         margin-bottom: 50px; /* Ajustar el margen inferior para pantallas de celular */
         &__container {
             flex-direction: column; /* Cambiar la dirección de flexbox a vertical para pantallas de celular */

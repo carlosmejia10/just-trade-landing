@@ -1,19 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./topBar.scss";
-import {Link} from "react-router-dom"
-import Logo from "../../images/logo.png"
-import Search from "../../images/search.png"
+import { Link } from "react-router-dom";
+import Logo from "../../images/logo.png";
+import Search from "../../images/search.png";
 
 const TopBar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
     return (
         <div className="topbar">
             <div className="topbar__container">
                 <div className="topbar__left">
-                    <Link to="/" className="topbar__logo">
+                    <Link to="/" className="topbar__left-logo">
                         <img src={Logo} alt="Logo" className="topbar__logo-img" />
                     </Link>
                 </div>
-                <div className="topbar__center">
+                
+                <div className={`topbar__center ${isOpen && "open"}`}> {/* Corregido: topbar__center */}
                     <ul className="topbar__list">
                         <li className="topbar__list-item">
                             <Link to="/" className="topbar__list-link">
@@ -38,6 +41,9 @@ const TopBar = () => {
                         </li>
                     </ul>
                 </div>
+                
+                
+
                 <div className="topbar__right">
                     <ul className="topbar__right-list">
                         <li className="topbar__right-item">
@@ -50,9 +56,14 @@ const TopBar = () => {
                         </li>
                     </ul>
                 </div>
+                <div className={`topbar-toggle ${isOpen && "open"}`} onClick={() => setIsOpen(!isOpen)}>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default TopBar;
