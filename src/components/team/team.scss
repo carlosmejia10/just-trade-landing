@@ -122,6 +122,12 @@
     margin-right: 50%;
 }
 }
+
+@media screen and (max-width: 600px) {
+  &__slider-slide-textcont {
+    margin-right: 30%;
+}
+}
     // /* Estilos para dispositivos móviles */
     @media screen and (max-width: 768px) {
       &__container {
