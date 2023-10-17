@@ -67,7 +67,7 @@
     .benefits {
         position: relative;
         z-index: 2;
-        padding: 20px; 
+        padding: 20px;
         margin-bottom: 50px; /* Ajustar el margen inferior para pantallas de celular */
         &__container {
             flex-direction: column; /* Cambiar la dirección de flexbox a vertical para pantallas de celular */
@@ -101,7 +101,7 @@
                 margin-bottom: 10px; /* Ajustar el margen inferior para pantallas de celular */
                 &-img {
                     margin-right: 6px; /* Ajustar el margen derecho para pantallas de celular */
-                    
+
                 }
                 &-text {
                     font-family: "Josefin Sans", sans-serif;
@@ -118,7 +118,6 @@
                 font-size: 17px; /* Reducir el tamaño de fuente para pantallas de celular */
                 padding: 16px 30px; /* Ajustar el relleno para pantallas de celular */
                 border-radius: 5px;
-                display: block; /* Cambiar a un elemento de bloque para centrarlo */
                 margin: 0 auto; /* Centrar el botón horizontalmente */
                 transition: all 0.5s ease;
                 &:hover {

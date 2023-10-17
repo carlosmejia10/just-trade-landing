@@ -71,21 +71,70 @@
     }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1235px) {
     .clients {
-      padding: 0 30px; /* Ajusta el relleno horizontal según tus necesidades */
-      &__title {
-        font-size: 32px; /* Tamaño de fuente reducido para dispositivos móviles */
-        margin-bottom: 30px; /* Ajusta el margen inferior según tus necesidades */
-      }
-      &__slider-slide-container {
-        flex-direction: column; /* Cambia la dirección de flexión para apilar elementos */
-        align-items: center; /* Centra los elementos verticalmente */
-        &-img {
-          margin-right: 0; /* Elimina el margen derecho de la imagen */
-          margin-bottom: 20px; /* Agrega un margen inferior entre la imagen y el texto */
-        }
-      }
-      /* Otros ajustes de estilo para dispositivos móviles aquí */
+        padding: 0 102px 0 104px;
     }
-  }
+}
+
+@media screen and (max-width: 1067px) {
+    .clients {
+        padding: 0 82px 0 84px;
+    }
+    .clients__slider-slide-img {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .clients__slider-slide-gallery {
+        display: none;
+    }
+    .clients__slider-slide-text {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    .clients__slider-slide-img {
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 634px) {
+    .clients__slider-slide-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .clients__slider-slide-img {
+        width: 100%;
+    }
+    .clients__slider-slide-text {
+        margin: 20px 0;
+        font-size: 18px;
+    }
+}
+
+// @media screen and (max-width: 1100px) {
+//     .clients {
+//       padding: 0 30px; /* Ajusta el relleno horizontal según tus necesidades */
+//       &__title {
+//         font-size: 32px; /* Tamaño de fuente reducido para dispositivos móviles */
+//         margin-bottom: 30px; /* Ajusta el margen inferior según tus necesidades */
+//       }
+//       &__slider-slide-container {
+//         flex-direction: column; /* Cambia la dirección de flexión para apilar elementos */
+//         align-items: center; /* Centra los elementos verticalmente */
+//         &-img {
+//           margin-right: 0; /* Elimina el margen derecho de la imagen */
+//           margin-bottom: 20px; /* Agrega un margen inferior entre la imagen y el texto */
+//         }
+//       }
+//       /* Otros ajustes de estilo para dispositivos móviles aquí */
+//     }
+//   }
+
+@media screen and (max-width: 1370px) {
+    .next-arrow-st {
+        left: 10%;
+    }
+}

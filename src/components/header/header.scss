@@ -72,16 +72,16 @@
         }
 
         &__right{
-            display: none; 
+            display: none;
         }
 
         &__left {
             display: none;/* Ajustar el margen superior para pantallas de celular */
         }
-        
+
         &__content {
-            align-items: center; /* Centrar los elementos en el eje X para pantallas de celular */
-            text-align: center; /* Centrar el texto para pantallas de celular */
+            align-items: flex-start; /* Centrar los elementos en el eje X para pantallas de celular */
+            text-align: flex-start; /* Centrar el texto para pantallas de celular */
             &-titles {
                 max-width: 580px; /* Reducir el ancho máximo para pantallas de celular */
                 margin-bottom: 20px; /* Ajustar el margen inferior para pantallas de celular */

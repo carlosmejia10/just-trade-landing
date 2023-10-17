@@ -17,12 +17,13 @@ const Clients = () => {
           <img
             src={NextArrow}
             alt="Next arrow"
-            className={className}
+            className={`next-arrow-st ${className}`}
             style={{
                 display: "block",
                 width: "50px",
                 marginTop: "200px",
-                left: "64%",
+                left: "7%",
+                top: "60%",
             }}
             onClick={onClick}
           />
@@ -40,7 +41,8 @@ const Clients = () => {
                 display: "block",
                 width: "50px",
                 marginTop: "200px",
-                left: "56%",
+                left: "1%",
+                top: "60%",
                 zIndex: "1",
             }}
             onClick={onClick}
@@ -59,6 +61,17 @@ const Clients = () => {
         pauseOnHover: true,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
+        responsive: [
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                    arrows: false,
+                }
+              },
+        ]
     }
 
     return (

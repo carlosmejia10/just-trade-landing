@@ -125,6 +125,51 @@
 
 @media screen and (max-width: 1400px) {
     .footer {
+        &__left {
+            margin-right: 90px;
+        }
+        &__middle {
+            margin-right: 120px;
+        }
+    }
+}
+
+@media screen and (max-width: 1056px) {
+    .footer {
+        &__left {
+            margin-right: 70px;
+        }
+        &__middle {
+            margin-right: 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 1008px) {
+    .footer {
+        &__left {
+            margin-right: 50px;
+        }
+        &__middle {
+            margin-right: 80px;
+        }
+    }
+}
+
+@media screen and (max-width: 972px) {
+    .footer {
+        &__left {
+            margin-right: 30px;
+        }
+        &__middle {
+            margin-right: 50px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 923px) {
+    .footer {
         &__container {
             padding: 20px 10px; /* Ajustar el relleno para pantallas de celular */
         }
@@ -132,6 +177,7 @@
             position: static; /* Eliminar la posición absoluta para pantallas de celular */
             transform: none; /* Eliminar la transformación horizontal para pantallas de celular */
             margin: 10px 0; /* Ajustar el margen superior e inferior para pantallas de celular */
+            margin-bottom: 40px;
         }
         &__label {
             font-size: 20px; /* Reducir el tamaño de fuente para pantallas de celular */
@@ -139,12 +185,13 @@
         }
         &__content {
             flex-direction: column; /* Cambiar la dirección de flexbox a vertical para pantallas de celular */
-            align-items: center; /* Centrar los elementos en el eje X para pantallas de celular */
+            align-items: flex-start; /* Centrar los elementos en el eje X para pantallas de celular */
             justify-content: center; /* Centrar los elementos en el eje Y para pantallas de celular */
             margin-top: 30px; /* Ajustar el margen superior para pantallas de celular */
         }
         &__left {
             margin-right: 0; /* Eliminar el margen derecho para pantallas de celular */
+            margin-bottom: 20px;
         }
         &__suggestions {
             margin-bottom: 10px; /* Reducir el margen inferior para pantallas de celular */
@@ -182,7 +229,7 @@
         }
         &__social {
             font-size: 16px; /* Reducir el tamaño de fuente para la sección de redes sociales */
-            margin-top: 10px; /* Ajustar el margen superior para pantallas de celular */
+            margin-top: 50px; /* Ajustar el margen superior para pantallas de celular */
             margin-bottom: 10px; /* Ajustar el margen inferior para pantallas de celular */
             text-align: center; /* Centrar el texto para pantallas de celular */
             &-list {

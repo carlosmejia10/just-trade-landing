@@ -2,23 +2,23 @@
     background-color: #fafafa;
     padding-left: 62px;
     padding-right: 31px;
-    
+
     &__container {
         padding: 23px 0;
     }
-    
+
     &__list {
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
     }
-    
+
     &__item {
         max-width: 480px;
         padding-left: 31px;
         margin-right: 60px;
         position: relative;
-        
+
         &::after {
             content: '';
             position: absolute;
@@ -29,11 +29,11 @@
             color: #F23802;
             background-color: #F23802;
         }
-        
+
         &:last-child {
             margin-right: 0;
         }
-        
+
         &-title {
             font-family: "Josefin Sans", sans-serif;
             font-weight: 700;
@@ -43,7 +43,7 @@
             margin-top: 30px;
             margin-bottom: 20px;
         }
-        
+
         &-text {
             color: #878787;
             line-height: 160%;
@@ -51,7 +51,7 @@
             margin-bottom: 30px;
         }
     }
-    
+
     &__focus {
         color: #000;
         border-bottom: 1px solid #000;
@@ -70,7 +70,7 @@
         &__item {
             max-width: 100%;
             margin-right: 0;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             padding-left: 0;
 
             &::after{
@@ -82,6 +82,32 @@
                 margin-top: 20px;
                 margin-bottom: 10px;
             }
+        }
+    }
+    @media screen and (max-width: 1120px) {
+        &__item-title {
+            font-size: 20px;
+        }
+        &__item {
+            padding-left: 21px;
+            margin-right: 40px;
+        }
+    }
+    @media screen and (max-width: 970px) {
+        &__item-title {
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+    }
+    @media screen and (max-width: 905px) {
+        &__item-title {
+            font-size: 16px;
+        }
+    }
+    @media screen and (max-width: 829px) {
+        &__item {
+            padding-left: 10px;
+            margin-right: 20px;
         }
     }
 }

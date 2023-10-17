@@ -2,8 +2,127 @@
     &__container {
       padding: 0 150px;
     }
-  
-    /* Estilos para dispositivos móviles */
+    &__textcont {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 35px;
+  }
+  &__title {
+      font-size: 48px;
+      line-height: 140%;
+      max-width: 456px;
+      &-focus {
+          color: #F23802;
+      }
+  }
+  &__text {
+      margin-left: 173px;
+      font-size: 18px;
+      line-height: 196%;
+      color: #939393;
+      max-width: 508px;
+  }
+  &__slider {
+      &-slide {
+          margin-right: 23.36px;
+          &-img {
+              width: 95% !important;
+              height: 326px;
+              opacity: 1;
+              object-fit: cover;
+              background-repeat: no-repeat;
+          }
+          &-info {
+              margin-top: 21.67px;
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+          }
+          &-textcont {
+              margin-right: 65px;
+          }
+          &-name {
+              font-weight: 600;
+              font-size: 20px;
+              margin-bottom: 5px;
+          }
+          &-role {
+              font-size: 14px;
+              color: #525969;
+          }
+          &-contact {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              &-img {
+                  margin-right: 14.49px;
+                  cursor: pointer;
+                  &:last-child {
+                      margin-right: 0;
+                  }
+              }
+          }
+      }
+  }
+
+  @media screen and (max-width: 1330px) {
+      &__slider-slide-textcont {
+          margin-right: 40px;
+      }
+  }
+
+  @media screen and (max-width: 1240px) {
+    &__slider-slide-textcont {
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width: 1152px) {
+  &__slider-slide-info {
+    margin-top: 21.67px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+&__slider-slide-textcont {
+  margin-bottom: 20px;
+}
+}
+@media screen and (max-width: 1000px) {
+  &__slider-slide-info {
+    margin-top: 21.67px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 890px) {
+  &__title {
+    font-size: 34px;
+    max-width: 50%;
+  }
+  &__container {
+    padding: 0 80px;
+  }
+}
+@media screen and (max-width: 890px) {
+  &__title {
+    font-size: 34px;
+    max-width: 50%;
+  }
+  &__container {
+    padding: 0 80px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  &__slider-slide-textcont {
+    margin-right: 50%;
+}
+}
+    // /* Estilos para dispositivos móviles */
     @media screen and (max-width: 768px) {
       &__container {
         padding: 0 20px; /* Ajusta el espaciado lateral para dispositivos móviles */
@@ -22,36 +141,36 @@
         font-size: 16px; /* Reduce el tamaño de fuente para dispositivos móviles */
         max-width: 100%; /* Haz que el texto ocupe el ancho completo */
       }
-      &__slider {
-        
-        &-slide {
-          margin-right: 0; /* Elimina el margen derecho para dispositivos móviles */
-          margin-bottom: 20px; /* Ajusta el margen inferior para dispositivos móviles */
-          &-info {
-            margin-top: 10px; /* Ajusta el margen superior para dispositivos móviles */
-          }
-          &-textcont {
-            margin-right: 0; /* Elimina el margen derecho para dispositivos móviles */
-          }
-          &-name {
-            font-size: 18px; /* Reduce el tamaño de fuente para dispositivos móviles */
-            margin-bottom: 3px; /* Ajusta el margen inferior para dispositivos móviles */
-          }
-          &-role {
-            font-size: 14px; /* Reduce el tamaño de fuente para dispositivos móviles */
-          }
-          &-contact {
-            flex-direction: column; /* Cambia la dirección de la columna para dispositivos móviles */
-            align-items: flex-start; /* Alinea los elementos a la izquierda para dispositivos móviles */
-            &-img {
-              margin-right: 0; /* Elimina el margen derecho para dispositivos móviles */
-              margin-bottom: 10px; /* Ajusta el margen inferior para dispositivos móviles */
-            }
-          }
-        }
-      }
+    //   &__slider {
+
+    //     &-slide {
+    //       margin-right: 0; /* Elimina el margen derecho para dispositivos móviles */
+    //       margin-bottom: 20px; /* Ajusta el margen inferior para dispositivos móviles */
+    //       &-info {
+    //         margin-top: 10px; /* Ajusta el margen superior para dispositivos móviles */
+    //       }
+    //       &-textcont {
+    //         margin-right: 0; /* Elimina el margen derecho para dispositivos móviles */
+    //       }
+    //       &-name {
+    //         font-size: 18px; /* Reduce el tamaño de fuente para dispositivos móviles */
+    //         margin-bottom: 3px; /* Ajusta el margen inferior para dispositivos móviles */
+    //       }
+    //       &-role {
+    //         font-size: 14px; /* Reduce el tamaño de fuente para dispositivos móviles */
+    //       }
+    //       &-contact {
+    //         // flex-direction: column; /* Cambia la dirección de la columna para dispositivos móviles */
+    //         // align-items: flex-start; /* Alinea los elementos a la izquierda para dispositivos móviles */
+    //         &-img {
+    //           margin-right: 0; /* Elimina el margen derecho para dispositivos móviles */
+    //           margin-bottom: 10px; /* Ajusta el margen inferior para dispositivos móviles */
+    //         }
+    //       }
+    //     }
+    //   }
     }
-  
+
     .slick-dots li button:before {
       background-color: #d9d9d9;
       height: 27px !important;
@@ -61,7 +180,7 @@
       border-radius: 50%;
       margin-top: 53px;
     }
-  
+
     .slick-dots li {
       &.slick-active button:before {
         background-color: #F23802;
@@ -69,4 +188,3 @@
       margin-right: 22px !important;
     }
   }
-  
