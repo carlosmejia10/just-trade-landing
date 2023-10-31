@@ -34,7 +34,7 @@ const TopBar = () => {
                             </Link>
                         </li>
                         <li className="topbar__list-item">
-                            <Link to="/" className="topbar__list-link">Noticias</Link>
+                            <a href="https://www.figma.com/community/file/1300985231926980178" target="_blank" className="topbar__list-link">PMV</a>
                         </li>
                         <li className="topbar__list-item">
                             <Link to="/" className="topbar__list-link">Just Trade!</Link>
